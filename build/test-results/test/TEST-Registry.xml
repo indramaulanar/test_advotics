@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Registry" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-15T16:55:00" hostname="MTI2-3-IndraMaulana.local" time="0.487">
+  <properties/>
+  <testcase name="Verify user can edit and search criteria after user find and edit the criteria in registry page" classname="Registry" time="0.487">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at core.pages.OnBoardPage.accessingPage(OnBoardPage.java:13)
+	at core.OnBoardingStepDef.usersAccessToTheAmazonWeb(OnBoardingStepDef.java:12)
+	at ✽.Users access to the amazon web(file:///Users/moka/works/android/advotics-test-automation/src/test/resources/features/Registry.feature:6)
+</failure>
+  </testcase>
+  <system-out><![CDATA[23:55:00.545 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@49fc669b
+
+@test @registry
+Scenario: Verify user can edit and search criteria after user find and edit the criteria in registry page ?[90m# src/test/resources/features/Registry.feature:5?[0m
+  ?[31mGiven ?[0m?[31mUsers access to the amazon web?[0m                                                                    ?[90m# core.OnBoardingStepDef.usersAccessToTheAmazonWeb()?[0m
+      ?[31mjava.lang.NullPointerException
+	at core.pages.OnBoardPage.accessingPage(OnBoardPage.java:13)
+	at core.OnBoardingStepDef.usersAccessToTheAmazonWeb(OnBoardingStepDef.java:12)
+	at ✽.Users access to the amazon web(file:///Users/moka/works/android/advotics-test-automation/src/test/resources/features/Registry.feature:6)
+?[0m
+  ?[36mAnd ?[0m?[36mUsers goes to the registry page?[0m                                                                     ?[90m# core.OnBoardingStepDef.usersGoesToTheRegistryPage()?[0m
+  ?[36mWhen ?[0m?[36mUser search registrant name ?[0m?[36m?[1m"John"?[0m                                                                 ?[90m# core.RegistryStepDefs.userSearchRegistrantName(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser select type is ?[0m?[36m?[1m"Birthday Gift List"?[0m                                                            ?[90m# core.RegistryStepDefs.userSelectTypeIs(java.lang.String)?[0m
+  ?[36mAnd ?[0m?[36mUser edit criteria with date range ?[0m?[36m?[1m"January"?[0m?[36m ?[0m?[36m?[1m2021?[0m?[36m to ?[0m?[36m?[1m"April"?[0m?[36m ?[0m?[36m?[1m2021?[0m                                   ?[90m# core.RegistryStepDefs.userEditCriteriaWithDateRangeTo(java.lang.String,int,java.lang.String,int)?[0m
+  ?[36mThen ?[0m?[36mUser verify date time accordance to that times?[0m                                                     ?[90m# core.RegistryStepDefs.userVerifyDateTimeAccordanceToThatTimes()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

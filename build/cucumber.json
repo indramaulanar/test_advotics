@@ -1,0 +1,144 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T16:55:00.652Z",
+        "line": 5,
+        "name": "Verify user can edit and search criteria after user find and edit the criteria in registry page",
+        "description": "",
+        "id": "registry;verify-user-can-edit-and-search-criteria-after-user-find-and-edit-the-criteria-in-registry-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat core.pages.OnBoardPage.accessingPage(OnBoardPage.java:13)\n\tat core.OnBoardingStepDef.usersAccessToTheAmazonWeb(OnBoardingStepDef.java:12)\n\tat ✽.Users access to the amazon web(file:///Users/moka/works/android/advotics-test-automation/src/test/resources/features/Registry.feature:6)\n",
+              "duration": 21436000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Users access to the amazon web",
+            "match": {
+              "location": "core.OnBoardingStepDef.usersAccessToTheAmazonWeb()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 628000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Users goes to the registry page",
+            "match": {
+              "location": "core.OnBoardingStepDef.usersGoesToTheRegistryPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User search registrant name \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 28
+                }
+              ],
+              "location": "core.RegistryStepDefs.userSearchRegistrantName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 514000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User select type is \"Birthday Gift List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Birthday Gift List\"",
+                  "offset": 20
+                }
+              ],
+              "location": "core.RegistryStepDefs.userSelectTypeIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User edit criteria with date range \"January\" 2021 to \"April\" 2021",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"January\"",
+                  "offset": 35
+                },
+                {
+                  "val": "2021",
+                  "offset": 45
+                },
+                {
+                  "val": "\"April\"",
+                  "offset": 53
+                },
+                {
+                  "val": "2021",
+                  "offset": 61
+                }
+              ],
+              "location": "core.RegistryStepDefs.userEditCriteriaWithDateRangeTo(java.lang.String,int,java.lang.String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User verify date time accordance to that times",
+            "match": {
+              "location": "core.RegistryStepDefs.userVerifyDateTimeAccordanceToThatTimes()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@registry"
+          }
+        ]
+      }
+    ],
+    "name": "Registry",
+    "description": "",
+    "id": "registry",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Registry.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
